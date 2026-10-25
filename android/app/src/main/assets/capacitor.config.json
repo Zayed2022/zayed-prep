@@ -1,0 +1,8 @@
+{
+	"appId": "com.zayed.prep",
+	"appName": "Zayed Prep",
+	"webDir": "www",
+	"android": {
+		"backgroundColor": "#f3f5f8"
+	}
+}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zayed Prep</title>
+<meta name="description" content="Free placement prep tracker for engineering students: aptitude, coding, DSA, core CS, projects, communication, cloud and AI.">
+<meta name="theme-color" content="#2f5bd3">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icons/favicon.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Zayed Prep">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="appbar">
+  <div class="wrap appbar-row">
+    <a class="brand" href="#home" aria-label="Zayed Prep home">
+      <img src="icons/logo.svg" alt="" width="34" height="34">
+      <span class="word">zayed<b>.</b></span><span class="word-sub">prep</span>
+    </a>
+    <div class="overall" title="Overall progress">
+      <div class="bar"><i id="ovBar"></i></div>
+      <span class="pct" id="ovPct">0%</span>
+    </div>
+  </div>
+</header>
+
+<main id="view" class="wrap" tabindex="-1"></main>
+
+<nav class="bottomnav" aria-label="Main">
+  <div class="wrap navrow">
+    <a href="#home" data-nav="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11l8-7 8 7v9h-5v-6H9v6H4z"/></svg>Home</a>
+    <a href="#cheats" data-nav="cheats"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 12h7M9 16h7"/></svg>Cheat sheets</a>
+    <a href="#resources" data-nav="resources"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h6a2 2 0 012 2v13a2 2 0 00-2-2H4zM20 5h-6a2 2 0 00-2 2v13a2 2 0 012-2h6z"/></svg>Resources</a>
+    <a href="#log" data-nav="log"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5zM9 8h6M9 12h6M9 16h3"/></svg>Log</a>
+  </div>
+</nav>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
